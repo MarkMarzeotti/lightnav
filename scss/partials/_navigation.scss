@@ -1,0 +1,84 @@
+// NAVIGATION
+
+#myNav {
+    display: none;
+}
+
+.lightnav {
+    float: right;
+    margin-top: 45px;
+    .lightnav-button {
+        .lightnav-line {
+            background: $color-tan;
+            &:before {
+                background: $color-tan;
+            }
+            &:after {
+                background: $color-tan;
+            }
+        }
+        .arrow-left {
+            position: absolute;
+            left: -31px;
+            bottom: 13px;
+            color: $color-tan;
+            pointer-events: none;
+            animation: slide-left 1s infinite;
+        }
+        .arrow-bottom-left {
+            position: absolute;
+            left: -16px;
+            bottom: -30px;
+            transform: rotate(-45deg);
+            color: $color-tan;
+            pointer-events: none;
+            animation: slide-bottom-left 1s infinite;
+        }
+        .arrow-bottom {
+            position: absolute;
+            left: 29px;
+            bottom: -43px;
+            transform: rotate(-90deg);
+            color: $color-tan;
+            pointer-events: none;
+            animation: slide-bottom 1s infinite;
+        }
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        left: -31px;
+    }
+    50% {
+        left: -41px;
+    }
+    100% {
+        left: -31px;
+    }
+}
+@keyframes slide-bottom-left {
+    0% {
+        left: -16px;
+        bottom: -30px;
+    }
+    50% {
+        left: -26px;
+        bottom: -40px;
+    }
+    100% {
+        left: -16px;
+        bottom: -30px;
+    }
+}
+@keyframes slide-bottom {
+    0% {
+        bottom: -43px;
+    }
+    50% {
+        bottom: -53px;
+    }
+    100% {
+        bottom: -43px;
+    }
+}

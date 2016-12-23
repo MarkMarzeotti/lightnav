@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LightNav - Easy to use popover site navigation</title>
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="xmlrpc.php">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Cutive+Mono|Roboto:300,400,500" type="text/css" media="all" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/lightnav.css" type="text/css" media="all" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lightnav.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+
+		<header class="masthead background-dark">
+			<div class="row">
+				<div class="half column">
+					<h1><a href="/">LightNav</a></h1>
+				</div>
+				<div class="half column text-right">
+
+					<div id="myNav">
+					    <ul>
+					        <li><a href="#">Top</a></li>
+					        <li><a href="#download">Download</a></li>
+					        <li><a href="#features">Features</a></li>
+					        <li><a href="#installation">Installation</a>
+								<ul>
+									<li><a href="#project-files">Add project files</a></li>
+									<li><a href="#javascript">JavaScript</a></li>
+								</ul>
+							</li>
+							<li><a href="#upcoming-features">Upcoming Features</a></li>
+					    </ul>
+					</div>
+
+					<!--<div id="myNav">
+						<ul>
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a>
+								<ul>
+									<li><a href="#">Child Menu Item</a></li>
+									<li><a href="#">Child Menu Item</a></li>
+									<li><a href="#">Child Menu Item</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Menu Item</a>
+								<ul>
+									<li><a href="#">Child Menu Item</a></li>
+									<li><a href="#">Child Menu Item</a></li>
+									<li>
+										<a href="#">Child Menu Item</a>
+										<ul>
+											<li><a href="#">Grand Child Menu Item</a></li>
+											<li>
+												<a href="#">Grand Child Menu Item</a>
+												<ul>
+													<li><a href="#">Great Grand Child Menu Item</a></li>
+													<li><a href="#">Great Grand Child Menu Item</a></li>
+													<li><a href="#">Great Grand Child Menu Item</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Grand Child Menu Item</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Child Menu Item</a></li>
+									<li>
+										<a href="#">Child Menu Item</a>
+										<ul>
+											<li><a href="#">Grand Child Menu Item</a></li>
+											<li><a href="#">Grand Child Menu Item</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Child Menu Item</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a></li>
+						</ul>
+					</div>-->
+
+				</div>
+				<div class="full column">
+					<h3>A lightweight (and sexy may I add) menu</h3>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+        <section id="download" class="content">
+            <div class="row">
+                <div class="half column">
+                    <h2>Download</h2>
+                    <p>Seen everything you need to see? Download a zip or view the code on GitHub.</p>
+                    <a class="button" href="#"><i class="fa fa-download" aria-hidden="true"></i>Download</a><a class="button" href="#"><i class="fa fa-github" aria-hidden="true"></i>View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="content">
+            <div class="row">
+                <div class="half column">
+                    <h2>Features</h2>
+                    <p>Super simple with elegant functionality.</p>
+                    <ul>
+                        <li>Built in open and close buttons</li>
+                        <li>Wrapped in a jQuery plugin for easy installation</li>
+                        <li>Built using lightweight CSS animations</li>
+                        <li>Supports infinite children</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="content">
+            <div class="row">
+                <div class="half column">
+                    <h2>Installation</h2>
+                    <p>The easiest installation you'll ever do. Set up your navigation the way you normally would, and wrap it in an easily identifiable class or id.</p>
+                    <br />
+                </div>
+            </div>
+        </section>
+
+        <section class="content code">
+            <div class="row">
+                <div class="column">
+                    <pre>
+
+	&lt;<span class="color-code-red">div</span> <span class="color-code-orange">id</span>=<span class="color-code-green">"myNav"</span>&gt;
+	    &lt;<span class="color-code-red">ul</span>&gt;
+	        &lt;<span class="color-code-red">li</span>&gt;&lt;<span class="color-code-red">a</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"#"</span>&gt;Top&lt;/<span class="color-code-red">a</span>&gt;&lt;/<span class="color-code-red">li</span>&gt;
+	        &lt;<span class="color-code-red">li</span>&gt;&lt;<span class="color-code-red">a</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"#download"</span>&gt;Download&lt;/<span class="color-code-red">a</span>&gt;&lt;/<span class="color-code-red">li</span>&gt;
+	        &lt;<span class="color-code-red">li</span>&gt;&lt;<span class="color-code-red">a</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"#features"</span>&gt;Features&lt;/<span class="color-code-red">a</span>&gt;&lt;/<span class="color-code-red">li</span>&gt;
+	        &lt;<span class="color-code-red">li</span>&gt;&lt;<span class="color-code-red">a</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"#installation"</span>&gt;Installation&lt;/<span class="color-code-red">a</span>&gt;
+	            &lt;<span class="color-code-red">ul</span>&gt;
+	                &lt;<span class="color-code-red">li</span>&gt;&lt;<span class="color-code-red">a</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"#project-files"</span>&gt;Add project files&lt;/<span class="color-code-red">a</span>&gt;&lt;/<span class="color-code-red">li</span>&gt;
+	                &lt;<span class="color-code-red">li</span>&gt;&lt;<span class="color-code-red">a</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"#javascript"</span>&gt;JavaScript&lt;/<span class="color-code-red">a</span>&gt;&lt;/<span class="color-code-red">li</span>&gt;
+	            &lt;/<span class="color-code-red">ul</span>&gt;
+	        &lt;/<span class="color-code-red">li</span>&gt;
+	    &lt;/<span class="color-code-red">ul</span>&gt;
+	&lt;/<span class="color-code-red">div</span>&gt;
+
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="row">
+                <div id="project-files" class="half column">
+					<h3>Add project files</h3>
+					<p>Just copy <span class="code">lightnav.css</span> and <span class="code">jquery.lightnav.js</span> into your project. Make sure you also include jQuery.</p>
+					<br />
+                </div>
+			</div>
+		</section>
+
+        <section class="content code">
+            <div class="row">
+                <div class="column">
+                    <pre>
+
+	&lt;<span class="color-code-red">link</span> <span class="color-code-orange">rel</span>=<span class="color-code-green">"stylesheet"</span> <span class="color-code-orange">href</span>=<span class="color-code-green">"css/lightnav.css"</span> <span class="color-code-orange">type</span>=<span class="color-code-green">"text/css"</span> <span class="color-code-orange">media</span>=<span class="color-code-green">"all"</span> /&gt;
+	&lt;<span class="color-code-red">script</span> <span class="color-code-orange">type</span>=<span class="color-code-green">"text/javascript"</span> <span class="color-code-orange">src</span>=<span class="color-code-green">"js/jquery.min.js"</span>&gt;&lt;/<span class="color-code-red">script</span>&gt;
+	&lt;<span class="color-code-red">script</span> <span class="color-code-orange">type</span>=<span class="color-code-green">"text/javascript"</span> <span class="color-code-orange">src</span>=<span class="color-code-green">"js/jquery.lightnav.js"</span>&gt;&lt;/<span class="color-code-red">script</span>&gt;
+
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+		<section class="content">
+		    <div class="row">
+                <div id="javascript" class="half column">
+                    <h3>JavaScript</h3>
+                    <p>Then call <span class="code">.lightnav()</span> on the navigation container. Thats it!</p>
+					<br />
+                </div>
+            </div>
+        </section>
+
+        <section class="content code">
+            <div class="row">
+                <div class="column">
+                    <pre>
+
+	<span class="color-code-blue">jQuery</span>(<span class="color-code-yellow">document</span>).<span class="color-code-blue">ready</span>(<span class="color-code-purple">function</span>($) {
+	    <span class="color-code-blue">$</span>(<span class="color-code-green">'#myNav'</span>).<span class="color-code-blue">lightnav</span>();
+	});
+
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+		<section id="upcoming-features" class="content">
+		    <div class="row">
+                <div class="half column">
+                    <h2>Upcoming Features</h2>
+                    <p>This is version 1.0 of LightNav. I have a couple features in mind but wanted to make the main functionality available as soon as possible. Here are a few I have planned.</p>
+					<h3>Near future:</h3>
+					<ul>
+						<li>Breakpoint Initializing</li>
+						<li>Options
+							<ul>
+								<li>Colors</li>
+								<li>Animations</li>
+								<li>Better parent/child relationships</li>
+							</ul>
+						</li>
+					</ul>
+					<h3>Not so near future:</h3>
+					<ul>
+						<li>WordPress Plugin</li>
+					</ul>
+					<br />
+                </div>
+            </div>
+        </section>
+
+        <footer class="mastfoot content background-dark">
+            <div class="row">
+                <div class="half column">
+                    <p>Developed and maintained by <a href="http://markmarzeotti.com">Mark Marzeotti</a> under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.</p>
+                </div>
+            </div>
+        </footer>
+
+		<script>
+			jQuery(document).ready(function($) {
+			    $('#myNav').lightnav();
+			});
+		</script>
+
+    </body>
+</html>

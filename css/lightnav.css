@@ -1,0 +1,119 @@
+.lightnav-no-scroll {
+  overflow: hidden;
+  height: 100%; }
+
+.lightnav .lightnav-button {
+  padding: 20px;
+  margin-right: -20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000; }
+  .lightnav .lightnav-button .lightnav-line {
+    width: 30px;
+    height: 4px;
+    background: #f4f7f7;
+    position: relative;
+    transition: background .4s; }
+    .lightnav .lightnav-button .lightnav-line:before {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      background: #f4f7f7;
+      transform: rotate(0deg);
+      transition: all .4s; }
+    .lightnav .lightnav-button .lightnav-line:after {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      background: #f4f7f7;
+      transform: rotate(0deg);
+      transition: all .4s; }
+.lightnav .lightnav-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  transition: background .4s; }
+  .lightnav .lightnav-wrap .lightnav-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+    overflow: hidden; }
+    .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner {
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      overflow: hidden; }
+      .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner > ul {
+        max-height: 80%;
+        overflow-y: scroll; }
+      .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul {
+        width: 100%;
+        padding: 0;
+        margin: 0; }
+        .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li {
+          width: 100%;
+          margin: 0;
+          text-align: center; }
+          .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li a {
+            color: transparent;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color .4s;
+            padding: 6px;
+            display: block; }
+          .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li ul li:first-child a {
+            padding-top: 14px; }
+          .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li ul li:last-child a {
+            padding-bottom: 14px; }
+.lightnav.lightnav-open .lightnav-button .lightnav-line {
+  background: transparent; }
+  .lightnav.lightnav-open .lightnav-button .lightnav-line:before {
+    transform: rotate(45deg);
+    top: 0; }
+  .lightnav.lightnav-open .lightnav-button .lightnav-line:after {
+    transform: rotate(-45deg);
+    bottom: 0; }
+.lightnav.lightnav-open .lightnav-wrap {
+  pointer-events: all;
+  background: rgba(31, 78, 95, 0.8); }
+  .lightnav.lightnav-open .lightnav-wrap .lightnav-outer {
+    display: table;
+    table-layout: fixed;
+    height: 100%; }
+    .lightnav.lightnav-open .lightnav-wrap .lightnav-outer .lightnav-inner {
+      display: table-cell;
+      vertical-align: middle; }
+      .lightnav.lightnav-open .lightnav-wrap .lightnav-outer .lightnav-inner ul li a {
+        color: #f4f7f7; }
+
+.lightnav-collapse {
+  display: none; }
+
+.lightnav-collapse.in {
+  display: block; }
+
+.lightnav-collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+  -o-transition-duration: .35s;
+  transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility; }

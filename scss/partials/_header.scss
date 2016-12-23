@@ -1,0 +1,26 @@
+// HEADER
+
+.masthead {
+    width: 100%;
+    float: left;
+    padding-bottom: 60px;
+    h1 {
+        color: $color-tan;
+        font-size: 30px;
+        margin-top: 50px;
+        a {
+            color: $color-tan;
+            text-decoration: none;
+        }
+    }
+    h3 {
+        margin-top: 200px;
+        color: $color-tan;
+        font-size: 18px;
+    }
+    .row {
+        .half {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// Marzeotti Base
+// http://markmarzeotti.com
+// MIT License
+
+@import "partials/variables";
+
+* {
+    outline: none;
+    font-family: $roboto;
+}
+a, li, label, input {
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+body, html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    background: $color-tan;
+}
+
+.background-tan {
+    background: $color-tan;
+    a {
+        color: $color-dark;
+    }
+}
+.background-light {
+    background: $color-light;
+}
+.background-medium {
+    background: $color-medium;
+}
+.background-dark {
+    background: $color-dark;
+    p {
+        color: $color-white;
+    }
+    p a {
+        color: $color-medium;
+    }
+}
+.color-code-green {
+    color: $color-code-green;
+}
+.color-code-orange {
+    color: $color-code-orange;
+}
+.color-code-red {
+    color: $color-code-red;
+}
+.color-code-blue {
+    color: $color-code-blue;
+}
+.color-code-yellow {
+    color: $color-code-yellow;
+}
+.color-code-purple {
+    color: $color-code-purple;
+}
+
+@import "partials/grid";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/content";
+@import "partials/footer";
