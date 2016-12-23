@@ -1,14 +1,3 @@
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+jQuery(document).ready(function($) {
+    $('.lightnav-button').append('<div class="arrow-left"><i class="fa fa-minus" aria-hidden="true"></i></div><div class="arrow-bottom-left"><i class="fa fa-minus" aria-hidden="true"></i></div><div class="arrow-bottom"><i class="fa fa-minus" aria-hidden="true"></i></div>');
 });
