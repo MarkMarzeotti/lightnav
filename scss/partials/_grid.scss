@@ -29,3 +29,14 @@ footer {
         margin: 0 -50px;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .row {
+        .half {
+            max-width: 100%;
+        }
+        .full {
+            width: 100%;
+        }
+    }
+}

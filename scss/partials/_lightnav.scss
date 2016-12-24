@@ -82,6 +82,10 @@
                             transition: color .4s;
                             padding: 6px;
                             display: block;
+                            -webkit-transition: all 0.3s ease;
+                            -moz-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
                         }
                         ul {
                             li {
@@ -95,6 +99,14 @@
                                         padding-bottom: 14px;
                                     }
                                 }
+                            }
+                        }
+                    }
+                    &:not(.active) {
+                        > li {
+                            > a {
+                                font-size: 18px;
+                                opacity: 0.7;
                             }
                         }
                     }

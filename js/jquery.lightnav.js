@@ -63,7 +63,7 @@
 
 		// add proper classes to all inner uls
 		var ulCount = 1;
-		$lightnavInner.find('ul').first().addClass('lightnav-main');
+		$lightnavInner.find('ul').first().addClass('lightnav-main active');
 		$lightnavUls.each(function() {
 			$(this).addClass('lightnav-collapse').attr('id', 'lightnav-collapse-' + ulCount);
 			$(this).siblings('a').attr('data-toggle', 'lightnavcollapse').attr('data-parent', 'lightnav-menu-' + ulCount).attr('href', '#lightnav-collapse-' + ulCount);
@@ -82,20 +82,29 @@
 
 		// toggle classes on subnav parent click
 	    $('li').click(function() {
+            if ($(this).children('ul').length && !$(this).children('ul').hasClass('active')) {
+                $('.active').removeClass('active');
+                $(this).children('ul').addClass('active');
+            } else {
+                $('.active').removeClass('active');
+                $(this).parent('ul').addClass('active');
+            }
+
 	        $(this).siblings().each(function() {
 	            if ($(this).children('ul').hasClass('in')) {
 	                $(this).find('.lightnav-collapse.in').siblings('a').click();
 	            }
 	        });
 			if (!$(this).children('ul').length) {
-				$('.lightnav-button').click();
+				$('.lightnav-button').click(); // close nav since there are no children
+                $('.active').removeClass('active');
+                $('.lightnav-main').addClass('active');
 			}
-	        //$(this).find('.lightnav-collapse.in').siblings('a').click();
 	    });
 
 	};
 
-}(jQuery);
+}(jQuery); // $(this).parent('ul').addClass('active');
 
 +function ($) {
   'use strict';

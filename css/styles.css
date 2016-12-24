@@ -75,6 +75,11 @@ footer {
   .row > .row {
     margin: 0 -50px; }
 
+@media screen and (max-width: 700px) {
+  .row .half {
+    max-width: 100%; }
+  .row .full {
+    width: 100%; } }
 h1,
 h2,
 h3,
@@ -142,7 +147,8 @@ blockquote {
     margin-top: 50px; }
     .masthead h1 a {
       color: #f4f7f7;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 500; }
   .masthead h3 {
     margin-top: 200px;
     color: #f4f7f7;

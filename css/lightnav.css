@@ -72,11 +72,18 @@
             font-size: 20px;
             transition: color .4s;
             padding: 6px;
-            display: block; }
+            display: block;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
           .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li ul li:first-child a {
             padding-top: 14px; }
           .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li ul li:last-child a {
             padding-bottom: 14px; }
+        .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul:not(.active) > li > a {
+          font-size: 18px;
+          opacity: 0.7; }
 .lightnav.lightnav-open .lightnav-button .lightnav-line {
   background: transparent; }
   .lightnav.lightnav-open .lightnav-button .lightnav-line:before {
