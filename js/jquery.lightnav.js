@@ -63,7 +63,7 @@
 
 		// add proper classes to all inner uls
 		var ulCount = 1;
-		$lightnavInner.find('ul').first().addClass('lightnav-main active');
+		$lightnavInner.find('ul').first().addClass('lightnav-main lightnav-active');
 		$lightnavUls.each(function() {
 			$(this).addClass('lightnav-collapse').attr('id', 'lightnav-collapse-' + ulCount);
 			$(this).siblings('a').attr('data-toggle', 'lightnavcollapse').attr('data-parent', 'lightnav-menu-' + ulCount).attr('href', '#lightnav-collapse-' + ulCount);
@@ -73,6 +73,8 @@
 
 		// toggle classes on button click
 	    $('.lightnav-button').click(function() {
+            $('.lightnav-active').removeClass('lightnav-active');
+            $('.lightnav-main').addClass('lightnav-active');
 	        $('.lightnav').toggleClass('lightnav-open');
 	        $('body').toggleClass('lightnav-no-scroll');
 	        $('.lightnav-collapse.in').each(function() {
@@ -82,29 +84,29 @@
 
 		// toggle classes on subnav parent click
 	    $('li').click(function() {
-            if ($(this).children('ul').length && !$(this).children('ul').hasClass('active')) {
-                $('.active').removeClass('active');
-                $(this).children('ul').addClass('active');
-            } else {
-                $('.active').removeClass('active');
-                $(this).parent('ul').addClass('active');
+
+            if ($(this).children('ul').length && !$(this).children('ul').hasClass('lightnav-active')) { // if li has subnav and it is not active
+                $('.lightnav-active').removeClass('lightnav-active');
+                $(this).children('ul').addClass('lightnav-active');
+            } else { // close subnav and restore lightnav-active to parent
+                $('.lightnav-active').removeClass('lightnav-active');
+                $(this).parent('ul').addClass('lightnav-active');
             }
 
 	        $(this).siblings().each(function() {
-	            if ($(this).children('ul').hasClass('in')) {
+	            if ($(this).children('ul').hasClass('in')) { // if any sibling nav is open we close it
 	                $(this).find('.lightnav-collapse.in').siblings('a').click();
 	            }
 	        });
+
 			if (!$(this).children('ul').length) {
 				$('.lightnav-button').click(); // close nav since there are no children
-                $('.active').removeClass('active');
-                $('.lightnav-main').addClass('active');
 			}
 	    });
 
 	};
 
-}(jQuery); // $(this).parent('ul').addClass('active');
+}(jQuery); // $(this).parent('ul').addClass('lightnav-active');
 
 +function ($) {
   'use strict';

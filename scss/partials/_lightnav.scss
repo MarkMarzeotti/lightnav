@@ -27,7 +27,13 @@
                 left: 0;
                 right: 0;
                 background: $color-tan;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
                 transform: rotate(0deg);
+                -webkit-transition: all .4s;
+                -moz-transition: all .4s;
+                -ms-transition: all .4s;
                 transition: all .4s;
             }
             &:after {
@@ -39,7 +45,13 @@
                 left: 0;
                 right: 0;
                 background: $color-tan;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
                 transform: rotate(0deg);
+                -webkit-transition: all .4s;
+                -moz-transition: all .4s;
+                -ms-transition: all .4s;
                 transition: all .4s;
             }
         }
@@ -51,6 +63,9 @@
         bottom: 0;
         left: 0;
         pointer-events: none;
+        -webkit-transition: background .4s;
+        -moz-transition: background .4s;
+        -ms-transition: background .4s;
         transition: background .4s;
         .lightnav-outer {
             width: 100%;
@@ -60,12 +75,14 @@
             overflow: hidden;
             .lightnav-inner {
                 width: 100%;
+                text-align: center;
                 display: table-cell;
                 vertical-align: middle;
                 overflow: hidden;
                 > ul {
                     max-height: 80%;
                     overflow-y: scroll;
+                    display: inline;
                 }
                 ul {
                     width: 100%;
@@ -79,12 +96,11 @@
                             color: transparent;
                             text-decoration: none;
                             font-size: 20px;
-                            transition: color .4s;
                             padding: 6px;
                             display: block;
                             -webkit-transition: all 0.3s ease;
                             -moz-transition: all 0.3s ease;
-                            -o-transition: all 0.3s ease;
+                            -ms-transition: all 0.3s ease;
                             transition: all 0.3s ease;
                         }
                         ul {
@@ -102,7 +118,7 @@
                             }
                         }
                     }
-                    &:not(.active) {
+                    &:not(.lightnav-active) {
                         > li {
                             > a {
                                 font-size: 18px;
@@ -119,10 +135,16 @@
             .lightnav-line {
                 background: transparent;
                 &:before {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
                     transform: rotate(45deg);
                     top: 0;
                 }
                 &:after {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
                     transform: rotate(-45deg);
                     bottom: 0;
                 }
@@ -161,12 +183,15 @@
     height: 0;
     overflow: hidden;
     -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: .35s;
-    -o-transition-duration: .35s;
+    -moz-transition-duration: .35s;
+    -ms-transition-duration: .35s;
     transition-duration: .35s;
     -webkit-transition-property: height, visibility;
-    -o-transition-property: height, visibility;
+    -moz-transition-property: height, visibility;
+    -ms-transition-property: height, visibility;
     transition-property: height, visibility;
 }
