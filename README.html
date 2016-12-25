@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="lightnav">LightNav</h1>
+
+<h2 id="alightweightandsexymayiaddmenu">A lightweight (and sexy may I add) menu</h2>
+
+<h3 id="supersimplewithelegantfunctionality.">Super simple with elegant functionality.</h3>
+
+<ul>
+<li>Built in open and close buttons</li>
+<li>Wrapped in a jQuery plugin for easy installation</li>
+<li>Built using lightweight CSS animations</li>
+<li>Supports infinite children</li>
+<li>Installation</li>
+</ul>
+
+<p>The easiest installation you&#8217;ll ever do. Set up your navigation the way you normally would, and wrap it in an easily identifiable class or id.</p>
+
+<pre><code class="html">&lt;div id=&quot;myNav&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Top&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#features&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#installation&quot;&gt;Installation&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#project-files&quot;&gt;Add project files&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#javascript&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="addprojectfiles">Add project files</h3>
+
+<p>Just copy <code>lightnav.css</code> and <code>jquery.lightnav.js</code> into your project. Make sure you also include jQuery.</p>
+
+<pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/lightnav.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.lightnav.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h3 id="javascript">JavaScript</h3>
+
+<p>Then call <code>.lightnav()</code> on the navigation container.</p>
+
+<p>Thats it! Minor css tweaks may need to be made. <code>.lightnav</code> may need a modified margin and float in order to make the hamburger button cooperate with your design. Colors can easily be changed with css to fit your color scheme.</p>
+
+<pre><code class="javascript">jQuery(document).ready(function($) {
+    $('#myNav').lightnav();
+});
+</code></pre>
+
+<h3 id="upcomingfeatures">Upcoming Features</h3>
+
+<p>This is version 1.0 of LightNav. I have a couple features in mind but wanted to make the main functionality available as soon as possible. Check back soon for updates and additional features.</p>
+
+</body>
+</html>
