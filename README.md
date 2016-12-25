@@ -28,8 +28,6 @@ The easiest installation you'll ever do. Set up your navigation the way you norm
 </div>
 ```
 
-
-
 ###Add project files
 
 Just copy `lightnav.css` and `jquery.lightnav.js` into your project. Make sure you also include jQuery.
@@ -39,8 +37,6 @@ Just copy `lightnav.css` and `jquery.lightnav.js` into your project. Make sure y
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.lightnav.js"></script>
 ```
-
-
 
 ###JavaScript
 
@@ -53,8 +49,6 @@ jQuery(document).ready(function($) {
     $('#myNav').lightnav();
 });
 ```
-
-
 
 ###Upcoming Features
 
