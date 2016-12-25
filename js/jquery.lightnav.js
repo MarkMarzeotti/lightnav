@@ -115,7 +115,7 @@
   // ============================================================
 
   function transitionEnd() {
-    var el = document.createElement('bootstrap')
+    var el = document.createElement('lightnav')
 
     var transEndEventNames = {
       WebkitTransition : 'webkitTransitionEnd',
