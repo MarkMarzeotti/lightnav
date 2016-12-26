@@ -18,7 +18,7 @@
 
 		// var settings = $.extend( {}, defaults, options );
 
-		this.addClass('lightnav').css('display', 'block');
+		this.addClass('lightnav').css('display', 'inline-block');
 
 		// remove navigation so we can add button and wrappers
 		var lightnavul = this.find('ul').first().parents().html();

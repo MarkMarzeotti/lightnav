@@ -160,6 +160,8 @@ blockquote {
     font-size: 18px; }
   .masthead .row .half {
     width: 50%; }
+  .masthead .lightnav-button {
+    margin-right: -20px; }
 
 #myNav {
   display: none; }
