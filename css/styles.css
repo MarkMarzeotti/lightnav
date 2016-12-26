@@ -79,7 +79,9 @@ footer {
   .row .half {
     max-width: 100%; }
   .row .full {
-    width: 100%; } }
+    width: 100%; }
+  .row .column {
+    padding: 0 20px; } }
 h1,
 h2,
 h3,
