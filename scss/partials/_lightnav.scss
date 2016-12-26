@@ -67,6 +67,7 @@
         -moz-transition: background .4s;
         -ms-transition: background .4s;
         transition: background .4s;
+        z-index: 100;
         .lightnav-outer {
             width: 100%;
             height: 100%;
@@ -92,6 +93,7 @@
                         width: 100%;
                         margin: 0;
                         text-align: center;
+                        display: block;
                         a {
                             color: transparent;
                             text-decoration: none;
