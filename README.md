@@ -1,6 +1,6 @@
 #LightNav
 
-##A lightweight (and sexy may I add) menu
+##A lightweight (and beautiful) pop-over navigation
 
 ###Super simple with elegant functionality.
 
