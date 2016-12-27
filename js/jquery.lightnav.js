@@ -83,7 +83,7 @@
 	    });
 
 		// toggle classes on subnav parent click
-	    $('li').click(function() {
+	    $('.lightnav li').click(function() {
 
             if ($(this).children('ul').length && !$(this).children('ul').hasClass('lightnav-active')) { // if li has subnav and it is not active
                 $('.lightnav-active').removeClass('lightnav-active');
